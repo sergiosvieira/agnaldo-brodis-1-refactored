@@ -42,7 +42,9 @@ end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
 begin
-  map.Destroy;
+  if (map <> nil) then begin
+    map.Destroy;
+  end;
 end;
 
 end.
